@@ -1,4 +1,4 @@
-# Muhammad Azwar Rasyid MyGram Final Golang Project
+![image](https://github.com/escanor15/FinalProjectMyGram/assets/49676420/11aa8dfc-4bb1-44e5-8d66-5bbfafca2d12)# Muhammad Azwar Rasyid MyGram Final Golang Project
 * [Photo](#photo)
 * [User](#user)
 * [Comment](#comment)
@@ -13,9 +13,9 @@ POST /photos
 > Body Parameters
 
 ```yaml
-title: Beach
-photo_url: https://images.unsplash.com/photo-1707343843598-39755549ac9a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
-caption: Foto Pantai
+title: Car
+photo_url: https://images.unsplash.com/photo-1707471644568-db2f13bf0f81?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+caption: Foto Mobil
 
 ```
 
@@ -39,7 +39,7 @@ caption: Foto Pantai
   "UpdatedAt": "2024-02-16T09:20:56.460191+07:00",
   "DeletedAt": null,
   "title": "Foto Pertama",
-  "photo_url": "[https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)",
+  "photo_url": "[[https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)",
   "caption": "foto pertama",
   "UserID": 1,
   "User": null
@@ -62,7 +62,7 @@ GET /photos
     "UpdatedAt": "2024-02-16T09:20:56.460191+07:00",
     "DeletedAt": null,
     "title": "Foto Pertama",
-    "photo_url": "https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "photo_url": "[https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)",
     "caption": "ini adalah foto pertama aink cuy",
     "UserID": 1,
     "User": null
@@ -72,9 +72,9 @@ GET /photos
     "CreatedAt": "2024-02-16T09:23:28.78337+07:00",
     "UpdatedAt": "2024-02-16T09:23:28.78337+07:00",
     "DeletedAt": null,
-    "title": "Beach",
-    "photo_url": "https://images.unsplash.com/photo-1707343843598-39755549ac9a?q=80&w=2832&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    "caption": "Foto Pantai",
+    "title": "Car",
+    "photo_url": "https://images.unsplash.com/photo-1707471644568-db2f13bf0f81?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "caption": "Foto Mobil",
     "UserID": 1,
     "User": null
   }
@@ -105,8 +105,8 @@ GET /photos/1
   "UpdatedAt": "2024-02-16T09:20:56.460191+07:00",
   "DeletedAt": null,
   "title": "Foto Pertama",
-  "photo_url": "https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "caption": "ini adalah foto pertama aink cuy",
+  "photo_url": "[https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)",
+  "caption": "foto pertama",
   "UserID": 1,
   "User": null
 }
@@ -119,8 +119,8 @@ PUT /photos/1
 > Body Parameters
 
 ```yaml
-title: Judulnya ganti
-caption: Captionnya ganti
+title: Update Judul
+caption: Update Caption
 photo_url: https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
 
 ```
@@ -144,9 +144,9 @@ photo_url: https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1
   "CreatedAt": "0001-01-01T00:00:00Z",
   "UpdatedAt": "2024-02-16T09:34:12.39539+07:00",
   "DeletedAt": null,
-  "title": "Judulnya ganti",
+  "title": "Update Judul",
   "photo_url": "https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "caption": "Captionnya ganti",
+  "caption": "Update Caption",
   "UserID": 1,
   "User": null
 }
@@ -175,8 +175,8 @@ POST /users/register
 > Body Parameters
 
 ```yaml
-username: farras
-email: farras@mail.com
+username: Azwar Rasyid
+email: azwarrasyid@mail.com
 password: "123456"
 age: "26"
 
@@ -199,9 +199,9 @@ age: "26"
 ```json
 {
   "age": 26,
-  "email": "farras@mail.com",
+  "email": "azwarrasyid2@gmail.com",
   "id": 2,
-  "username": "farras"
+  "username": "azwar rasyid 2"
 }
 ```
 
@@ -221,7 +221,7 @@ POST /users/login
 > Body Parameters
 
 ```yaml
-email: alfa@mail.com
+email: azwar@mail.com
 password: "123456"
 
 ```
@@ -275,7 +275,7 @@ message: coba comment foto pertama
   "CreatedAt": "2024-02-16T10:44:31.243673+07:00",
   "UpdatedAt": "2024-02-16T10:44:31.243673+07:00",
   "DeletedAt": null,
-  "message": "coba comment foto pertama",
+  "message": "coba comment foto",
   "UserID": 1,
   "User": null,
   "PhotoID": 1,
@@ -313,15 +313,15 @@ GET /comments
       "CreatedAt": "2024-02-16T10:36:28.712273+07:00",
       "UpdatedAt": "2024-02-16T10:36:28.712273+07:00",
       "DeletedAt": null,
-      "message": "coba comment foto pertama",
+      "message": "coba comment foto",
       "UserID": 1,
       "User": {
         "ID": 1,
         "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
         "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
         "DeletedAt": null,
-        "username": "alfa",
-        "email": "alfa@mail.com",
+        "username": "azwar rasyid 2",
+        "email": "azwar@mail.com",
         "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
         "age": 9,
         "photos": null,
@@ -334,9 +334,9 @@ GET /comments
         "CreatedAt": "2024-02-16T09:20:56.460191+07:00",
         "UpdatedAt": "2024-02-16T09:34:12.39539+07:00",
         "DeletedAt": null,
-        "title": "Judulnya ganti",
+        "title": "Update Judul",
         "photo_url": "https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "caption": "Captionnya ganti",
+        "caption": "Update Caption",
         "UserID": 1,
         "User": null
       }
@@ -346,15 +346,15 @@ GET /comments
       "CreatedAt": "2024-02-16T10:42:44.593117+07:00",
       "UpdatedAt": "2024-02-16T11:04:04.363957+07:00",
       "DeletedAt": null,
-      "message": "Update comment dulu",
+      "message": "Update comment",
       "UserID": 1,
       "User": {
         "ID": 1,
         "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
         "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
         "DeletedAt": null,
-        "username": "alfa",
-        "email": "alfa@mail.com",
+        "username": "azwar rasyid2",
+        "email": "azwar@mail.com",
         "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
         "age": 9,
         "photos": null,
@@ -367,9 +367,9 @@ GET /comments
         "CreatedAt": "2024-02-16T09:20:56.460191+07:00",
         "UpdatedAt": "2024-02-16T09:34:12.39539+07:00",
         "DeletedAt": null,
-        "title": "Judulnya ganti",
+        "title": "Update Judul",
         "photo_url": "https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1828&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        "caption": "Captionnya ganti",
+        "caption": "Update Caption",
         "UserID": 1,
         "User": null
       }
@@ -379,15 +379,15 @@ GET /comments
       "CreatedAt": "2024-02-16T10:42:47.696695+07:00",
       "UpdatedAt": "2024-02-16T10:42:47.696695+07:00",
       "DeletedAt": null,
-      "message": "coba comment foto pertama",
+      "message": "coba comment foto ",
       "UserID": 1,
       "User": {
         "ID": 1,
         "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
         "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
         "DeletedAt": null,
-        "username": "alfa",
-        "email": "alfa@mail.com",
+        "username": "azwar rasyid",
+        "email": "azwar@mail.com",
         "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
         "age": 9,
         "photos": null,
@@ -419,8 +419,8 @@ GET /comments
         "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
         "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
         "DeletedAt": null,
-        "username": "alfa",
-        "email": "alfa@mail.com",
+        "username": "azwar",
+        "email": "azwar@mail.com",
         "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
         "age": 9,
         "photos": null,
@@ -452,8 +452,8 @@ GET /comments
         "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
         "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
         "DeletedAt": null,
-        "username": "alfa",
-        "email": "alfa@mail.com",
+        "username": "azwar",
+        "email": "azwar@mail.com",
         "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
         "age": 9,
         "photos": null,
@@ -562,8 +562,8 @@ GET /comments/14
       "CreatedAt": "2024-02-13T16:18:36.717295+07:00",
       "UpdatedAt": "2024-02-13T16:18:36.717295+07:00",
       "DeletedAt": null,
-      "username": "alfa",
-      "email": "alfa@mail.com",
+      "username": "azwar",
+      "email": "azwar@mail.com",
       "password": "$2a$08$xunMy1yQGACQSwKTzwWusuCM1v4c13IlQKXkxEpfoez93JqYC4ndm",
       "age": 9,
       "photos": null,
@@ -595,8 +595,8 @@ POST /socialmedias
 > Body Parameters
 
 ```yaml
-name: Alfa
-social_media_url: alfa@instagram.com
+name: azwar
+social_media_url: azwar@instagram.com
 
 ```
 
@@ -618,8 +618,8 @@ social_media_url: alfa@instagram.com
   "CreatedAt": "2024-02-16T11:32:53.000673+07:00",
   "UpdatedAt": "2024-02-16T11:32:53.000673+07:00",
   "DeletedAt": null,
-  "name": "Alfa",
-  "social_media_url": "alfa@instagram.com",
+  "name": "azwar",
+  "social_media_url": "azwar@instagram.com",
   "UserID": 1,
   "User": null
 }
@@ -640,8 +640,8 @@ GET /socialmedias
     "CreatedAt": "2024-02-16T11:32:53.000673+07:00",
     "UpdatedAt": "2024-02-16T11:32:53.000673+07:00",
     "DeletedAt": null,
-    "name": "Alfa",
-    "social_media_url": "alfa@instagram.com",
+    "name": "azwar",
+    "social_media_url": "azwar@instagram.com",
     "UserID": 1,
     "User": null
   },
@@ -682,8 +682,8 @@ GET /socialmedias/1
   "CreatedAt": "2024-02-16T11:32:53.000673+07:00",
   "UpdatedAt": "2024-02-16T11:32:53.000673+07:00",
   "DeletedAt": null,
-  "name": "Alfa",
-  "social_media_url": "alfa@instagram.com",
+  "name": "azwar",
+  "social_media_url": "azwar@instagram.com",
   "UserID": 1,
   "User": null
 }
