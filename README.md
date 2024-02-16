@@ -1,4 +1,4 @@
-# Muhammad Azwar Rasyidn MyGram Final Golang Project
+# Muhammad Azwar Rasyid MyGram Final Golang Project
 * [Photo](#photo)
 * [User](#user)
 * [Comment](#comment)
@@ -50,28 +50,6 @@ caption: Foto Pantai
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Create First Photo|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» title|string|true|none||none|
-|» photo_url|string|true|none||none|
-|» caption|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-
 ## GET Get All Photo
 
 GET /photos
@@ -116,36 +94,6 @@ GET /photos
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Success Get All Photo|Inline|
-|401|[Unauthorized](https://tools.ietf.org/html/rfc7235#section-3.1)|Failed not login|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» title|string|true|none||none|
-|» photo_url|string|true|none||none|
-|» caption|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-
-HTTP Status Code **401**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» error_message|string|true|none||none|
-|» error_status|string|true|none||none|
-
 ## GET Get One Photo
 
 GET /photos/1
@@ -167,28 +115,6 @@ GET /photos/1
   "User": null
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Get One Photo|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» title|string|true|none||none|
-|» photo_url|string|true|none||none|
-|» caption|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
 
 ## PUT Update Photo
 
@@ -230,28 +156,6 @@ photo_url: https://images.unsplash.com/photo-1707696199186-d26b0f779f30?q=80&w=1
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Update Photo|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» title|string|true|none||none|
-|» photo_url|string|true|none||none|
-|» caption|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-
 ## DELETE Delete Photo
 
 DELETE /photos/3
@@ -265,20 +169,6 @@ DELETE /photos/3
   "message": "photo with id 3 has been successfully deleted"
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Delete Photo|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» message|string|true|none||none|
 
 # User
 
@@ -328,31 +218,6 @@ age: "26"
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Register MyGram|Inline|
-|400|[Bad Request](https://tools.ietf.org/html/rfc7231#section-6.5.1)|Failed Register MyGram|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» age|integer|true|none||none|
-|» email|string|true|none||none|
-|» id|integer|true|none||none|
-|» username|string|true|none||none|
-
-HTTP Status Code **400**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» error|string|true|none||none|
-|» message|string|true|none||none|
-
 ## POST Login MyGram
 
 POST /users/login
@@ -383,19 +248,6 @@ password: "123456"
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Login MyGram|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **200**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» token|string|true|none||none|
 
 # Comment
 
@@ -435,27 +287,6 @@ message: coba comment foto pertama
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Post Comment|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» message|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-|» PhotoID|integer|true|none||none|
-|» Photo|null|true|none||none|
 
 ## GET Get All Comment
 
@@ -650,49 +481,6 @@ GET /comments
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Get All Comment|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **200**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» comments|[object]|true|none||none|
-|»» ID|integer|true|none||none|
-|»» CreatedAt|string|true|none||none|
-|»» UpdatedAt|string|true|none||none|
-|»» DeletedAt|null|true|none||none|
-|»» message|string|true|none||none|
-|»» UserID|integer|true|none||none|
-|»» User|object|true|none||none|
-|»»» ID|integer|true|none||none|
-|»»» CreatedAt|string|true|none||none|
-|»»» UpdatedAt|string|true|none||none|
-|»»» DeletedAt|null|true|none||none|
-|»»» username|string|true|none||none|
-|»»» email|string|true|none||none|
-|»»» password|string|true|none||none|
-|»»» age|integer|true|none||none|
-|»»» photos|null|true|none||none|
-|»»» comments|null|true|none||none|
-|»»» social_media|null|true|none||none|
-|»» PhotoID|integer|true|none||none|
-|»» Photo|object|true|none||none|
-|»»» ID|integer|true|none||none|
-|»»» CreatedAt|string|true|none||none|
-|»»» UpdatedAt|string|true|none||none|
-|»»» DeletedAt|null|true|none||none|
-|»»» title|string|true|none||none|
-|»»» photo_url|string|true|none||none|
-|»»» caption|string|true|none||none|
-|»»» UserID|integer|true|none||none|
-|»»» User|null|true|none||none|
-
 ## DELETE Delete Comment
 
 DELETE /comments/15
@@ -706,20 +494,6 @@ DELETE /comments/15
   "message": "comment with id 15 has been successfully deleted"
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Delete Comment|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» message|string|true|none||none|
 
 ## PUT Update Comment
 
@@ -756,28 +530,6 @@ message: Update comment dulu
   "Photo": null
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Update Comment|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» message|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-|» PhotoID|integer|true|none||none|
-|» Photo|null|true|none||none|
 
 ## GET Get One Comment
 
@@ -838,49 +590,6 @@ GET /comments/14
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|200|[OK](https://tools.ietf.org/html/rfc7231#section-6.3.1)|Get One Comment|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **200**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» comment|object|true|none||none|
-|»» ID|integer|true|none||none|
-|»» CreatedAt|string|true|none||none|
-|»» UpdatedAt|string|true|none||none|
-|»» DeletedAt|null|true|none||none|
-|»» message|string|true|none||none|
-|»» UserID|integer|true|none||none|
-|»» User|object|true|none||none|
-|»»» ID|integer|true|none||none|
-|»»» CreatedAt|string|true|none||none|
-|»»» UpdatedAt|string|true|none||none|
-|»»» DeletedAt|null|true|none||none|
-|»»» username|string|true|none||none|
-|»»» email|string|true|none||none|
-|»»» password|string|true|none||none|
-|»»» age|integer|true|none||none|
-|»»» photos|null|true|none||none|
-|»»» comments|null|true|none||none|
-|»»» social_media|null|true|none||none|
-|»» PhotoID|integer|true|none||none|
-|»» Photo|object|true|none||none|
-|»»» ID|integer|true|none||none|
-|»»» CreatedAt|string|true|none||none|
-|»»» UpdatedAt|string|true|none||none|
-|»»» DeletedAt|null|true|none||none|
-|»»» title|string|true|none||none|
-|»»» photo_url|string|true|none||none|
-|»»» caption|string|true|none||none|
-|»»» UserID|integer|true|none||none|
-|»»» User|null|true|none||none|
-
 # Social Media
 
 ## POST Create Social Media
@@ -919,27 +628,6 @@ social_media_url: alfa@instagram.com
   "User": null
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Create Social Media|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» name|string|true|none||none|
-|» social_media_url|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
 
 ## GET Get All Social Media
 
@@ -984,27 +672,6 @@ GET /socialmedias
 ]
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Get All Social Media|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» name|string|true|none||none|
-|» social_media_url|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-
 ## GET Get One Social Media
 
 GET /socialmedias/1
@@ -1025,27 +692,6 @@ GET /socialmedias/1
   "User": null
 }
 ```
-
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Get One Social Media|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» name|string|true|none||none|
-|» social_media_url|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
 
 ## PUT Update Social Media
 
@@ -1084,27 +730,6 @@ social_media_url: bimo@gmail.com
 }
 ```
 
-### Responses
-
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Update Social Media|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» ID|integer|true|none||none|
-|» CreatedAt|string|true|none||none|
-|» UpdatedAt|string|true|none||none|
-|» DeletedAt|null|true|none||none|
-|» name|string|true|none||none|
-|» social_media_url|string|true|none||none|
-|» UserID|integer|true|none||none|
-|» User|null|true|none||none|
-
 ## DELETE Delete Social Media
 
 DELETE /socialmedias/2
@@ -1119,16 +744,4 @@ DELETE /socialmedias/2
 }
 ```
 
-### Responses
 
-|HTTP Status Code |Meaning|Description|Data schema|
-|---|---|---|---|
-|201|[Created](https://tools.ietf.org/html/rfc7231#section-6.3.2)|Delete Social Media|Inline|
-
-### Responses Data Schema
-
-HTTP Status Code **201**
-
-|Name|Type|Required|Restrictions|Title|description|
-|---|---|---|---|---|---|
-|» message|string|true|none||none|
