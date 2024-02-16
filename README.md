@@ -3,10 +3,6 @@
 * [User](#user)
 * [Comment](#comment)
 * [Social Media](#social-media)
-* 
-# Authentication
-
-- HTTP Authentication, scheme: bearer
 
 # Photo
 
