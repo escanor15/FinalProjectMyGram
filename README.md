@@ -1,4 +1,4 @@
-# MyGram Final Bootcamp Golang Project
+# Muhammad Azwar Rasyidn MyGram Final Golang Project
 * [Photo](#photo)
 * [User](#user)
 * [Comment](#comment)
@@ -43,8 +43,8 @@ caption: Foto Pantai
   "UpdatedAt": "2024-02-16T09:20:56.460191+07:00",
   "DeletedAt": null,
   "title": "Foto Pertama",
-  "photo_url": "https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  "caption": "ini adalah foto pertama aink cuy",
+  "photo_url": "[https://images.unsplash.com/photo-1679065949530-7bb1fba3ccb3?q=80&w=2787&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D](https://unsplash.com/photos/a-person-is-walking-in-the-desert-at-sunset-STV2s3FYw7Y)",
+  "caption": "foto pertama",
   "UserID": 1,
   "User": null
 }
