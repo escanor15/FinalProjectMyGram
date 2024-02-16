@@ -1,4 +1,4 @@
-![image](https://github.com/escanor15/FinalProjectMyGram/assets/49676420/11aa8dfc-4bb1-44e5-8d66-5bbfafca2d12)# Muhammad Azwar Rasyid MyGram Final Golang Project
+# Muhammad Azwar Rasyid MyGram Final Golang Project
 * [Photo](#photo)
 * [User](#user)
 * [Comment](#comment)
